@@ -922,7 +922,8 @@ public class ServerTest {
      */
     @Test
     @DisplayName("Persistence Test")
-    public void testPersistence(TestInfo testInfo) {
+    public void
+    testPersistence(TestInfo testInfo) {
         printTestName(testInfo);
         //We are calling the load api using the data in "/passoffFiles/LoadData.json" as the request
         load();

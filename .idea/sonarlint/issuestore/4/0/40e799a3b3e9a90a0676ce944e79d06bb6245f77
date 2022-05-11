@@ -1,0 +1,8 @@
+
+T
+java:S1874,"9Remove this use of "HTTP_SERVER_ERROR"; it is deprecated.(ô®ß“ýÿÿÿÿ
+R
+java:S1128"<Remove this unused import 'java.nio.file.Files.writeString'.(ì¢èÿ
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(¬„úïùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.( ç•Ñ

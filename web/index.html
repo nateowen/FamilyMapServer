@@ -103,7 +103,7 @@
     function load() {
       window.scrollTo(0, document.body.scrollHeight);
       document.getElementById("handleBox").value = "/load";
-      document.getElementById("requestBox").value = formatJson("{\"users\":[],\"persons\":[],\"events\":[]}");
+      document.getElementById("requestBox").value = formatJson("{\"users\":[],\"persons\":[],\"data\":[]}");
     }
     function getAllEvents() {
       window.scrollTo(0, document.body.scrollHeight);
@@ -165,7 +165,7 @@
         <li>
           <a href="javascript:load()">/load</a> This API will load the server&apos;s database with
           data provided by json text in the response body. The json text must contain an array of users as
-          defined in the register details in addition to a personID, an array of persons, and an array of events.
+          defined in the register details in addition to a personID, an array of persons, and an array of data.
           WARNING: all data from the database is wiped when this is called. The json file will be specified in
           the body of the request. A example.json file is provided to get you started with loading specific data.
           No authorization authtoken is required.
@@ -213,7 +213,7 @@
           No authorization authtoken is required.
         </li>
         <li>
-          <a href="javascript:getAllEvents()">/event</a> This API will return ALL events for ALL
+          <a href="javascript:getAllEvents()">/event</a> This API will return ALL data for ALL
           family members of the current user. The current user is determined from the provided
           authorization authtoken (which is required for this call). The returned JSON object contains
           "data" which is an array of event objects.
@@ -226,7 +226,7 @@
           Authorization authtoken is required.
         </li>
         <li>
-          <a href="javascript:getAllPersons()">/person</a> This API will return ALL people
+          <a href="javascript:getAllPersons()">/person</a> This API will return ALL persons
           associated with the current user. The current user is determined from the provided a
           uthorization authtoken (which is required for this call). The returned JSON object contains
           "data" which is an array of person objects.
